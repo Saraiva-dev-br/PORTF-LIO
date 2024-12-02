@@ -227,9 +227,11 @@ img {
 .home__img {
     position: absolute;
     right: 0;
-    bottom: 0;
+    /* Apaga (ou comenta) a linha abaixo pra ficar mais fácil manusear a imagem */
+    /* bottom: 0; */
     width: 260px;
 }
+
 
 .home__blob {
     fill: var(--first-color);
@@ -423,14 +425,14 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
-    .home {
-        row-gap: 2rem;
-    }
+@media (max-width: 576px) {
     .home__img {
         width: 200px;
-    }
+        /* Estando relativo ao topo fica mais fácil de manusear a imagem */
+        top: 75px;
+    }   
 }
+
 
 @media screen and (min-width: 576px) {
     .home {
